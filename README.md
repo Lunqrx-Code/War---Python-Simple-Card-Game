@@ -7,4 +7,4 @@ The higher value wins,
 however if the same value for both people is drawn Each person places 3 cards for bet and the winner of the next round takes the heap
 
 CONTROLS
-press space to play a card
+press enter to play a card
