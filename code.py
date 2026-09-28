@@ -45,32 +45,39 @@ while len(deck1) >0 and len(deck2) > 0:
     print("You are holding the" , deck1[0].number , " of " , deck1[0].suit, end="") 
     input(" ")
     print("Your opponent is holding the" , deck2[0].number , " of " , deck2[0].suit)
+    
     if deck1[0].number < deck2[0].number:
         print("\nYou lost\n")
         deck2.append(deck2.pop(0))
         deck2.append(deck1.pop(0))
+        
     elif deck1[0].number > deck2[0].number:
         print("\nYou win!!!\n")
         deck1.append(deck1.pop(0))
         deck1.append(deck2.pop(0))
+        
     elif deck1[0].number == deck2[0].number:
         deck1.append(deck1.pop(0))
         deck2.append(deck2.pop(0))
+        
         print("\nYou are at WAR\n")
         print("You are holding the" , deck1[0].number , " of " , deck1[0].suit, end="") 
         input(" ")
         print("Your opponent is holding the" , deck2[0].number , " of " , deck2[0].suit)
+        
         if deck1[0].number < deck2[0].number:
             print("\nYou lost\n")
             #I could just for i in range 3 but i think if i get another error i'll get DEATHLY ill
             deck2.append(deck1.pop(0))
             deck2.append(deck1.pop(0))
             deck2.append(deck1.pop(0))
+            
         elif deck1[0].number > deck2[0].number:
             print("\nYou win!!!\n")
             deck1.append(deck2.pop(0))
             deck1.append(deck2.pop(0))
             deck1.append(deck2.pop(0))
+            
         elif deck1[0].number == deck2[0].number:
             print("\nDouble War\n")
             #I really dont wanna do double wars tonight
